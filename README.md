@@ -136,6 +136,7 @@ flowchart TD;
 %%A[untracked ] --git add--> B[stage + tracked];
       A[untracked] --git add--> B[stage + tracked];
       С[modified] --git add--> B[stage + tracked];
+      B[stage + tracked] --изменения--> С[modified];
       B[stage + tracked] --git commit--> D[tracked];
       D[tracked ] --Изменения--> С[modified];
 ```
