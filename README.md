@@ -133,8 +133,8 @@ Git сообщит об этом с помощью статуса modified: фа
 #### Типичный жизненный цикл файла в Git
 ```mermaid
 flowchart TD;
-A[untracked ] --git add--> B[stage + tracked];
-      %%A[untracked (неотслеживаемый)] --git add--> B[stage (в списке коммит) + tracked];
+%%A[untracked ] --git add--> B[stage + tracked];
+      A[untracked (неотслеживаемый)] --git add--> B[stage (в списке коммит) + tracked];
       %%С[modified (измененный)] --git add--> B[stage (в списке коммит) + tracked];
       %%B[stage (в списке коммит) + tracked] --git commit--> D[tracked (отслеживаемый)];
       %%D[tracked (отслеживаемый)] --Изменения--> С[modified (измененный)];
