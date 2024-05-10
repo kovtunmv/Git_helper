@@ -134,8 +134,8 @@ Git сообщит об этом с помощью статуса modified: фа
 ```mermaid
 flowchart TD;
 %%A[untracked ] --git add--> B[stage + tracked];
-      A[untracked (неотслеживаемый)] --git add--> B[stage (в списке коммит) + tracked];
-      %%С[modified (измененный)] --git add--> B[stage (в списке коммит) + tracked];
-      %%B[stage (в списке коммит) + tracked] --git commit--> D[tracked (отслеживаемый)];
-      %%D[tracked (отслеживаемый)] --Изменения--> С[modified (измененный)];
+      A[untracked] --git add--> B[stage + tracked];
+      С[modified] --git add--> B[stage + tracked];
+      B[stage + tracked] --git commit--> D[tracked];
+      D[tracked ] --Изменения--> С[modified];
 ```
