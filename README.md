@@ -131,7 +131,7 @@ __modified (англ. «изменённый»)__ <br)
 Git сообщит об этом с помощью статуса modified: файл изменён относительно той версии, которая уже в staging. Чтобы добавить в staging последнюю версию, нужно выполнить git add file.txt ещё раз. <br>
 
 #### Типичный жизненный цикл файла в Git
-```mermid
+```mermaid
 flowchart TD;
       A[untracked (неотслеживаемый)] -- git add --> B[stage (в списке коммит) + tracked];
       С[modified (измененный)] -- git add --> B[stage (в списке коммит) + tracked];
