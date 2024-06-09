@@ -327,4 +327,3 @@ Git поддерживает суффикс навигации `~`. С его п
 `$ git push -u origin my-branch # отправили ветку my-branch в удалённый репозиторий` <br>
 
 Удалить текущий привязанный origin: `git remote rm origin` <br>
-----
