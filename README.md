@@ -324,9 +324,7 @@ Git поддерживает суффикс навигации `~`. С его п
 `$ git pull # подтянули новые изменения в main` <br>
 `$ git checkout my-branch # вернулись в рабочую ветку my-branch` <br>
 `$ git merge main # влили main в новую ветку my-branch` <br>
-`$ git push -u origin my-branch # отправили ветку my-branch в удалённый репозиторий`
+`$ git push -u origin my-branch # отправили ветку my-branch в удалённый репозиторий` <br>
 
-<br>
-Удалить текущий привязанный origin - `git remote rm origin`
-<br>
+Удалить текущий привязанный origin: `git remote rm origin` <br>
 ----
